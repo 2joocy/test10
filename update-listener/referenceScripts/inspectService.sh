@@ -1,0 +1,1 @@
+sudo docker service inspect --pretty test10

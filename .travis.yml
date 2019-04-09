@@ -1,0 +1,16 @@
+language: bash
+services: docker
+
+cache:
+  directories:
+      - node_modules
+
+env:
+  - CI=true
+  - FRONT_URL=runner
+
+script:
+- docker build -t test10:latest .
+- docker network create mynet
+- docker run --network mynet --name runner -d -p 127.0.0.1:3000:3000 test10:latest npm start 
+- docker run --network mynet --name tester test10:latest npm test 
