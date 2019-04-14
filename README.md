@@ -43,7 +43,11 @@ We were unable to find the equavalent to Maven Goals. However, we could simulate
 - Open another terminal, first run `npm i`
 - In that same terminal, run `npm start`
 
+## Travis CI
+https://travis-ci.org/BingoBois/test10
 
+## CD Status
+http://45.76.91.135:7777/webhook
 
 Or run the Dockerfile.
 
